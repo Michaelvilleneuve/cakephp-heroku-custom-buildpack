@@ -391,7 +391,7 @@ if [[ ! -f "Procfile" ]]; then
     echo "web: $bindir/heroku-$engine-apache2" > Procfile
     notice_inline "No Procfile, using 'web: $bindir/heroku-$engine-apache2'."
 fi
-CAKEPHP_APP_TMP_PATH="www/app/tmp"
+CAKEPHP_APP_TMP_PATH="app/tmp"
 
 # make tmp dir
 echo "-----> Creating CakePHP tmp directories"
